@@ -1,105 +1,114 @@
 % !TeX TS-program = xelatex
 
 \documentclass{resume}
-\ResumeName{冯开宇}
-
+\ResumeName{徐柯淞}
+%\usepackage{geometry,fancyhdr,enumitem,footmisc,hyperref,xeCJKfntef,xcolor,ctex}
 \begin{document}
 
 \ResumeContacts{
-  (+86) 188-8888-8888,%
-  \ResumeUrl{mailto:loveress01@outlook.com}{loveress01@outlook.com},%
-  \ResumeUrl{https://blog.fkynjyq.com}{blog.fkynjyq.com} \footnote{下划线内容包含超链接。},%
-  \ResumeUrl{https://github.com/fky2015}{github.com/fky2015}%
+  (+31) 6-5870-5772,%
+  \ResumeUrl{mailto:isksxu@gmail.com}{isksxu@gmail.com},%
+  \ResumeUrl{https://www.linkedin.com/in/kesongxu/}{linkedin.com/kesongxu},% \footnote{下划线内容包含超链接。}
+  微信号: isksxu%
 }
 
 \ResumeTitle
 
 \section{教育经历}
 \ResumeItem
-[北京理工大学大学|硕士研究生]
-{北京理工大学}
-[\textnormal{网络空间安全，网络空间安全学院|}  学术型硕士研究生]
-[2021.09—2024.06（预计）]
+[代尔夫特理工大学|硕士研究生]
+{代尔夫特理工大学}
+[\textnormal{飞行性能专业，航空航天学院|} 理学硕士]
+[2020.09—2023.07（预计）]
 
-\textbf{GPA: 3.62/4.0}，主要研究方向为\textbf{拜占庭共识算法}，在分布式系统领域方面有一定的研究和工程经验。\textbf{2024年应届生}。
-
-主要研究成果为：发表在 XXX 期刊上的论文《XXX》。
+\textbf{2023年应届生}，主修课程包括飞行器空气动力学、计算流体力学、多学科优化设计、知识工程、气动弹性力学、航空发动机技术、风洞实验与分析等。毕业论文研究一种机尾边界层吸入式飞机的气动声学。
 
 \ResumeItem
-[北京理工大学大学|本科生]
-{北京理工大学}
-[\textnormal{计算机科学与技术，计算机学院|} 工学学士]
-[2017.09—2021.06]
+[复旦大学|本科生]
+{复旦大学}
+[\textnormal{飞行器设计与工程，航空航天系|} 工学学士]
+[2016.09—2020.06]
 
-\textbf{GPA: 3.7/4.0(专业前 3\%)}，获学业奖学金多次，全国大学生 XYZ 竞赛二等奖（2次），ZYX 竞赛三等奖。
+\textbf{GPA: 3.39/4.0(专业前 15\%)}，每年均获优秀学生奖学金，“挑战杯”大学生课外学术科技作品竞赛复旦大学一等奖。
 
-\section[技术能力]{技术能力\protect\footnote{与求职岗位无关的技能省略或用灰色表示。}}
-\begin{itemize}
-  \item \textbf{语言}: 编程不受特定语言限制。常用 Rust, Golang, Python,C++； 熟悉 C, \GrayText{JavaScript}；了解 Lua, Java, \GrayText{TypeScript}。
-  \item \textbf{工作流}: Linux, Shell, (Neo)Vim, Git, GitHub, GitLab.
-  \item \textbf{其他}: 有容器化技术的实践经验，熟悉 Kubernetes 的使用。
-\end{itemize}
+毕业设计：基于人工神经网络方法的非常规构型商用客机设计
 
 \section{工作经历}
 
-\ResumeItem{北京 ABCD 有限公司}
-[后端开发实习生/XXXX]
-[2020.10—2021.03] 
+\ResumeItem{中仿智能科技（上海）股份有限公司}
+[飞行仿真软件实习生]
+[2021.06—2021.10] 
 
 \begin{itemize}
-  \item \textbf{独立负责XXX业务后端的设计、开发、测试和部署。}通过 FaaS、Kafka 等平台实现站内信模板渲染服务。向上游提供 SDK 代码，增加或升级了多种离线和在线逻辑。完成了业务对站内信的多样需求。
-  \item \textbf{参与 XXX 的需求分析，系统技术方案设计；完成需求开发、灰度测试、上线和监控。}
+  \item 负责一款中空中航时无人机的气动建模和初步测试，通过AVL等气动计算软件实现初步气动设计，使用C++配合飞行摇杆进行飞行性能测试，熟悉掌握了Git工作流进行团队协作。
+  \item 使用MATLAB及Simulink参与A320飞行模拟器的气动调参及自动驾驶项目，使其飞行性能符合QTG要求。
+  \item 使用MATLAB及C++将加速度传感器测量数据转换为飞行模拟器摇杆输入值。
 \end{itemize}
 
 \section{项目经历}
 
-\ResumeItem{\textbf{BusTub} 基于 C++ 的简易单机数据库}
-[ \textnormal{CMU 15-445} 课程]
+\ResumeItem{机尾边界层吸入式飞机的气动声学研究}
+[研究生毕业论文]
+[2022.03 至今]
 \begin{itemize}
-  \item 实现了基于可扩展哈希表和LRU-K的内存池管理。实现了可并发的B+树，支持乐观加锁的读写操作。
-  \item 采用火山模型实现了查询、修改、连接、聚合等查询执行器，对部分查询进行了改写与下推。
-  \item 采用 2PL 进行并发控制，支持死锁处理、多种隔离级别、表锁和行锁。
-  \item 对数据库系统有了基本的认识和实践。
+  \item 使用MATLAB通过调用PowerFLOW软件API实现了模型批量化前处理和后处理。
+  \item 在学院 hpc 上对机尾边界层吸入飞机进行数值模拟，将结果与实验数据对比，对该构型进行气动噪音研究。
 \end{itemize}
 
-
-\ResumeItem{\textbf{Multi-Raft} 分布式 \textbf{KV} 存储系统}
-[ \textnormal{MIT 6.824} 课程]
-\begin{itemize}
-  \item 实现了 Raft 协议的选举、日志复制、持久化、日志压缩等基本功能。
-  \item 基于 Raft 协议实现了满足线性一致性的 KV 数据库。
-  \item 采用 Multi-Raft 架构，支持数据分片，分片迁移，分片垃圾回收和分片迁移时读写优化。
-  \item 对分布式系统的设计考量有了更多的认识。
-\end{itemize}
-
-\ResumeItem{\textbf{ZYX} 平台下的某某共识算法设计与实现}
-[共识算法设计与实现]
-[2021.11—2022.07] 
+\ResumeItem{直升机性能、稳定性和控制}
+[研究生课程项目]
+[2022.02 - 2022.05]
 
 \begin{itemize}
-  \item 根据 ZYX (Rust 实现的开源区块链框架) 的架构，\textbf{修改并实现某某某共识算法}。
-  \item 针对系统进行性能测试，分析瓶颈，并优化吞吐量；TPS 由 1K 达到 6K。
-  \item 此项目为实验室研究项目的一部分。
+  \item 对一款直升机进行主要参数估计，使用3自由度模型对其进行机动模拟并使用PID调参对其进行优化。
 \end{itemize}
 
-\ResumeItem[BIThesis 北京理工大学毕设模板集合(开源项目)]
-{\ResumeUrl{https://github.com/BITNP/BIThesis}{\textbf{BIThesis} 北京理工大学毕设 \LaTeX 模板集合}}
-[主要维护者（开源项目）]
-[2020.04 至今]
+\ResumeItem{实验与模拟}
+[研究生课程项目]
+[2021.12 - 2022.04] 
 
 \begin{itemize}
-  \item 根据相关排版要求，\textbf{利用 LaTeX3 (expl3) 设计了同时符合各个学位要求且支持灵活配置的宏包及多套模板}。
-  \item 需求开发和问题修复采用标准工作流，引入了回归测试与基于 GitHub Actions 的测试与持续集成。
-  \item 负责了什么什么；完成了怎样的结果。
-\end{itemize}
+  \item 小组合作通过无量纲化等实验设计准则制订实验及后处理计划，利用学院低速风洞模拟一款螺旋桨飞机在不同攻角、侧滑角、发动机转速下的飞行性能，综合研究该飞机方向舵在单发失效等不同条件下的舵效变化。
+  \end{itemize}
 
-\section{个人总结}
+\ResumeItem{计算流体力学：离散化技术}
+[研究生课程项目]
+[2020.12 - 2021.05] 
 
 \begin{itemize}
-  \item 本人乐观开朗、在校成绩优异、自驱能力强，具有良好的沟通能力和团队合作精神。
-  \item 可以使用英语进行工作交流（六级成绩 XXX），平时有阅读英文书籍和口语练习的习惯。
-  \item 有六年 Linux 使用经验，较为丰富的软件开发经验、开源项目贡献和维护经验。善于技术写作，持续关注互联网技术发展。
+  \item 合作并分别使用 Python/MATLAB 编写二维不可压缩 Navier-Stokes 方程求解器，利用该模型模拟顶盖方腔流体至稳态，将结果与相关文献进行对比，初步了解计算流体力学中的离散化概念。
 \end{itemize}
 
+\ResumeItem{航空航天工程中的计算流体力学}
+[研究生课程项目]
+[2020.09 - 2020.11]
+\begin{itemize}
+  \item 使用 ANSYS ICEM CFD + CFX 对 Aerospatiale A 翼型进行数值模拟，研究了不同网格密度、湍流模型和求解精度对结果影响，了解了 CFD 基础理论和常用计算方法。
+\end{itemize}
+
+\ResumeItem{基于人工神经网络方法的非常规构型商用客机设计}
+[本科毕业设计]
+[2019.09 - 2020.04]
+
+\begin{itemize}
+  \item 使用 Creo, HyperMesh 和 Fluent 建立并批处理一种非常规构型飞机的参数化模型，进行数值模拟，并使用人工神经网络的方法对该气动模型进行了优化。
+  \item 评分：A (4.0 / 4.0).
+\end{itemize}
+
+\ResumeItem{基于血流储备分数的颈动脉狭窄评估}
+[复旦大学曦源项目]
+[2018.06-2019.06]
+\begin{itemize}
+  \item 使用 HyperMesh 和 ANSYS CFD 基于 CT 影像和临床数据建立颈动脉的流固耦合模型，进行数值模拟，建立一种具有较高准确度的颈动脉狭窄 FFR\textsubscript{CT} 评估模型。
+  \item 成果以共同第一作者发表中文核心期刊一篇， SCI论文两篇，代表成果：\textbf{Kesong Xu}, Long Yu, Jun Wan, Shengzhang Wang, Haiyan Lu, “\ResumeUrl{https://doi.org/10.1080/10255842.2019.1710741}{The Influence of the Elastic Modulus of the Plaque in Carotid Artery on the Computed Results of FFR\textsubscript{CT}}”, Computer Methods in Biomechanics and Biomedical Engineering, Volume 23, Issue 5, 2020.
+  \item 项目成果获“挑战杯”全国大学生课外学术科技作品竞赛上海市一等奖。
+\end{itemize}
+
+\section[其他]{技能/证书及其他}
+\begin{itemize}
+  \item \textbf{技能}: MATLAB, Creo, HyperMesh, ANSYS CFD (ICEM, CFX, Fluent), PowerFLOW, MS Office, LaTex, C++
+  \item \textbf{证书}: 托福99/英语六级(549)，AutoCAD(初级)，普通话(二级甲等)。
+  \item \textbf{活动}: 复旦大学彩云支南协会太阳花志愿者 
+\end{itemize}
 
 \end{document}
